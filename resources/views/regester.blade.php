@@ -108,6 +108,19 @@
                                     @endif
                                 </div>
                                 <div class="form-group mb-3">
+                                    <input type="text" placeholder="Like" id="like" class="form-control"
+                                           name="Like" required autofocus>
+                                    @if ($errors->has('like'))
+                                        <span class="text-danger">{{ $errors->first('like') }}</span>
+                                    @endif
+                                </div> <div class="form-group mb-3">
+                                    <input type="text" placeholder="Facebook" id="facebook" class="form-control"
+                                           name="facebook" required autofocus>
+                                    @if ($errors->has('facebook'))
+                                        <span class="text-danger">{{ $errors->first('facebook') }}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group mb-3">
                                     <input type="password" placeholder="Password" id="password" class="form-control"
                                            name="password" required>
                                     @if ($errors->has('password'))
